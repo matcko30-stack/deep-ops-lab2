@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Консультація з підбору спорядження">
+  <meta name="author" content="Мацько Богдан Володимирович">
+  <title>Контакти | DEEP OPS</title>
+  <!-- Єдиний зовнішній файл стилів (CSS3, без JavaScript і фреймворків) -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/emblem.png">
+</head>
+<body id="top">
+
+  <!-- Шапка: фіксована (position: fixed), логотип з transform, назва з fade-in -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><img src="images/emblem.png" alt="Емблема DEEP OPS: морський коник із тризубом" width="44" height="44"></span>
+        <span class="site-title">DEEP OPS · спорядження</span>
+      </a>
+
+      <!-- Кнопка мобільного меню без JS (checkbox hack) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger" title="Меню"><span></span></label>
+
+      <!-- Навігація: flexbox + transition: all 0.3s -->
+      <nav class="site-nav" aria-label="Головне меню">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <!-- Пункт із dropdown-меню (анімація висування через transform: translateY) -->
+          <li class="has-dropdown">
+            <a href="catalog.html">Каталог <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <ul class="dropdown">
+              <li><a href="catalog.html#overview">Огляд</a></li>
+              <li><a href="catalog.html#products">ПНВ і дайвінг</a></li>
+              <li><a href="catalog.html#nvg-models">Моделі ПНБ (15)</a></li>
+              <li><a href="catalog.html#brands">Схожі моделі з фото</a></li>
+              <li><a href="catalog.html#apparel">Одяг DEEP OPS</a></li>
+              <li><a href="catalog.html#guide">Як обрати</a></li>
+            </ul>
+          </li>
+          <li><a href="lookbook.html">Фотожурнал</a></li>
+          <li><a href="compare.html">Порівняння ПНВ</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contacts.html" class="active" aria-current="page">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основний контент: три блоки (CSS Grid) -->
+  <main class="container content">
+    <h1 class="page-title">Контакти</h1>
+
+    <!-- Блок 1: текст з анімацією slide-in -->
+    <section class="block slide-in">
+      <h2>Консультація з підбору</h2>
+      <p>Не знаєте, який ПНВ або ребризер підійде саме вам? Опишіть завдання й бюджет — підберемо комплект. Пишіть через форму або на <a href="mailto:shop@deep-ops.example.com" class="link-anim">shop@deep-ops.example.com</a>.</p>
+      <p>Форма навчальна: вона демонструє CSS3-ефекти (підсвічування полів, анімована кнопка) і не надсилає дані на сервер. Перед тим як писати, перегляньте <a href="compare.html" class="link-anim">порівняння ПНВ</a>.</p>
+    </section>
+
+    <!-- Блок 2: контактна форма з анімованою кнопкою -->
+    <section class="block" id="order">
+      <h2>Написати</h2>
+      <form class="contact-form" action="#" method="get">
+        <label for="name">Ім'я</label>
+        <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" rows="5" placeholder="Назва товару, колір і розмір або ваше питання"></textarea>
+        <button type="submit" class="btn-send">Надіслати <span aria-hidden="true">&#10148;</span></button>
+      </form>
+    </section>
+
+    <!-- Блок 3: часті питання (акордеон) -->
+    <section class="block">
+      <h2>Часті питання</h2>
+      <div class="accordion">
+        <div class="acc-item">
+          <input type="checkbox" id="faq0" class="acc-toggle" checked>
+          <label for="faq0" class="acc-title">Як швидко ви відповідаєте?</label>
+          <div class="acc-body"><div class="acc-inner"><p>Зазвичай протягом доби в робочі дні.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <input type="checkbox" id="faq1" class="acc-toggle">
+          <label for="faq1" class="acc-title">Як доставляєте?</label>
+          <div class="acc-body"><div class="acc-inner"><p>Новою Поштою, Укрпоштою або самовивозом. Деталі — у правилах доставки магазину.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <input type="checkbox" id="faq2" class="acc-toggle">
+          <label for="faq2" class="acc-title">Це справжній магазин?</label>
+          <div class="acc-body"><div class="acc-inner"><p>Ні, це навчальний проєкт з веб-розробки. Товари та ціни є прикладом.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер: копірайт, соцмережі з bounce-анімацією, кнопка «нагору» -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; 2026 Мацько Богдан. DEEP OPS — навчальний проєкт на чистому HTML і CSS3.</p>
+        <p class="disclaimer">Магазин не пов'язаний з підрозділами, згаданими на сайті.</p>
+      </div>
+      <ul class="social">
+        <li><a href="mailto:shop@deep-ops.example.com" aria-label="E-mail"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18v12H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></li>
+        <li><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M21 3L3 11l7 3 3 7z M10 14l11-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="13.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 7l1.5-3h3L15 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back-to-top: плавний скрол через scroll-behavior: smooth -->
+  <a href="#top" class="to-top" aria-label="Повернутися нагору">&#8593;</a>
+
+</body>
+</html>

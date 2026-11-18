@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Ласти">
+<title>Ласти</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4252"/><stop offset="1" stop-color="#0b1d2a"/></linearGradient>
+<pattern id="camo" width="60" height="60" patternUnits="userSpaceOnUse">
+<rect width="60" height="60" fill="#b9a77e"/>
+<path d="M5 8 q12 -6 18 4 q-4 10 -16 6z" fill="#7d8a5a"/><path d="M34 2 q14 2 16 14 q-12 4 -18 -4z" fill="#8a6e4b"/>
+<path d="M20 30 q16 -8 22 6 q-8 12 -22 4z" fill="#6f7c4e"/><path d="M44 38 q12 2 12 14 q-10 6 -16 -6z" fill="#cfc2a0"/>
+<path d="M2 40 q10 -2 14 10 q-8 8 -16 0z" fill="#8a6e4b"/></pattern><pattern id="stripes" width="20" height="14" patternUnits="userSpaceOnUse">
+<rect width="20" height="14" fill="#f4f6f8"/><rect y="0" width="20" height="6" fill="#2a4b8d"/></pattern>
+</defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="270" rx="130" ry="10" fill="#000" opacity=".25"/>
+<path d="M118 40 h44 v70 q30 60 20 150 h-84 q-10 -90 20 -150z" fill="#16191b" stroke="#3d4f58" stroke-width="4"/><path d="M122 110 h36" stroke="#3d4f58" stroke-width="3"/><path d="M238 40 h44 v70 q30 60 20 150 h-84 q-10 -90 20 -150z" fill="#16191b" stroke="#3d4f58" stroke-width="4"/><path d="M242 110 h36" stroke="#3d4f58" stroke-width="3"/>
+</svg>

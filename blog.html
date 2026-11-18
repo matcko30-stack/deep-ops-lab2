@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Огляди спорядження та поради">
+  <meta name="author" content="Мацько Богдан Володимирович">
+  <title>Блог | DEEP OPS</title>
+  <!-- Єдиний зовнішній файл стилів (CSS3, без JavaScript і фреймворків) -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/emblem.png">
+</head>
+<body id="top">
+
+  <!-- Шапка: фіксована (position: fixed), логотип з transform, назва з fade-in -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><img src="images/emblem.png" alt="Емблема DEEP OPS: морський коник із тризубом" width="44" height="44"></span>
+        <span class="site-title">DEEP OPS · спорядження</span>
+      </a>
+
+      <!-- Кнопка мобільного меню без JS (checkbox hack) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger" title="Меню"><span></span></label>
+
+      <!-- Навігація: flexbox + transition: all 0.3s -->
+      <nav class="site-nav" aria-label="Головне меню">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <!-- Пункт із dropdown-меню (анімація висування через transform: translateY) -->
+          <li class="has-dropdown">
+            <a href="catalog.html">Каталог <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <ul class="dropdown">
+              <li><a href="catalog.html#overview">Огляд</a></li>
+              <li><a href="catalog.html#products">ПНВ і дайвінг</a></li>
+              <li><a href="catalog.html#nvg-models">Моделі ПНБ (15)</a></li>
+              <li><a href="catalog.html#brands">Схожі моделі з фото</a></li>
+              <li><a href="catalog.html#apparel">Одяг DEEP OPS</a></li>
+              <li><a href="catalog.html#guide">Як обрати</a></li>
+            </ul>
+          </li>
+          <li><a href="lookbook.html">Фотожурнал</a></li>
+          <li><a href="compare.html">Порівняння ПНВ</a></li>
+          <li><a href="blog.html" class="active" aria-current="page">Блог</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основний контент: три блоки (CSS Grid) -->
+  <main class="container content">
+    <h1 class="page-title">Блог</h1>
+
+    <!-- Блок 1: текст з анімацією slide-in -->
+    <section class="block slide-in">
+      <h2>Огляди та поради</h2>
+      <p>У блозі ми пишемо про спорядження з каталогу: як воно працює, чим відрізняються моделі та як за ним доглядати. Також розповідаємо про підрозділи бойових плавців світу.</p>
+      <p>Наведіть курсор на статтю: вона виділяється, а сусідні картки розмиваються завдяки <code>filter: blur()</code>. Заголовки мають анімоване підкреслення. Запропонувати тему можна через сторінку <a href="contacts.html" class="link-anim">«Контакти»</a>.</p>
+    </section>
+
+    <!-- Блок 2: статті з hover-ефектами на посиланнях -->
+    <section class="block block-wide">
+      <h2>Останні статті</h2>
+      <div class="posts">
+        <article class="post">
+          <img src="images/nvg_binocular.svg" alt="Обкладинка статті «Gen 2+ чи Gen 3: що обрати»" width="400" height="300" loading="lazy">
+          <div class="post-body">
+            <time datetime="2026-10-12">12.10.2026</time>
+            <h3><a href="blog.html#post-1" class="link-anim" id="post-1">Gen 2+ чи Gen 3: що обрати</a></h3>
+            <p>Чим відрізняються покоління ЕОП і коли переплата за Gen 3 справді має сенс.</p>
+          </div>
+        </article>
+        <article class="post">
+          <img src="images/rebreather.svg" alt="Обкладинка статті «Ребризер проти акваланга»" width="400" height="300" loading="lazy">
+          <div class="post-body">
+            <time datetime="2026-11-02">02.11.2026</time>
+            <h3><a href="blog.html#post-2" class="link-anim" id="post-2">Ребризер проти акваланга</a></h3>
+            <p>Чому бойові плавці обирають замкнутий цикл і які обмеження має кисневий ребризер.</p>
+          </div>
+        </article>
+        <article class="post">
+          <img src="images/dive_light.svg" alt="Обкладинка статті «Догляд за спорядженням після моря»" width="400" height="300" loading="lazy">
+          <div class="post-body">
+            <time datetime="2026-11-15">15.11.2026</time>
+            <h3><a href="blog.html#post-3" class="link-anim" id="post-3">Догляд за спорядженням після моря</a></h3>
+            <p>Як промивати, сушити й зберігати ПНВ, ліхтарі та ребризер, щоб вони прослужили довше.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Блок 3: теги та архів -->
+    <section class="block span-2">
+      <h2>Теги</h2>
+      <ul class="tags">
+        <li><a href="blog.html#post-1">#пнв</a></li>
+        <li><a href="blog.html#post-1">#gen3</a></li>
+        <li><a href="blog.html#post-2">#ребризер</a></li>
+        <li><a href="blog.html#post-2">#бойовий-дайвінг</a></li>
+        <li><a href="blog.html#post-3">#догляд</a></li>
+        <li><a href="blog.html#post-3">#ліхтарі</a></li>
+      </ul>
+      <h3>Архів</h3>
+      <ul class="archive">
+        <li><a href="blog.html#post-3" class="link-anim">Листопад 2026</a> — 2 статті</li>
+        <li><a href="blog.html#post-1" class="link-anim">Жовтень 2026</a> — 1 стаття</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Футер: копірайт, соцмережі з bounce-анімацією, кнопка «нагору» -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; 2026 Мацько Богдан. DEEP OPS — навчальний проєкт на чистому HTML і CSS3.</p>
+        <p class="disclaimer">Магазин не пов'язаний з підрозділами, згаданими на сайті.</p>
+      </div>
+      <ul class="social">
+        <li><a href="mailto:shop@deep-ops.example.com" aria-label="E-mail"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18v12H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></li>
+        <li><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M21 3L3 11l7 3 3 7z M10 14l11-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="13.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 7l1.5-3h3L15 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back-to-top: плавний скрол через scroll-behavior: smooth -->
+  <a href="#top" class="to-top" aria-label="Повернутися нагору">&#8593;</a>
+
+</body>
+</html>

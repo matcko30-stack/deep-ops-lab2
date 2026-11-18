@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Схема шарнірного бінокулярного ПНБ: модулі відкидаються окремо">
+<title>Схема шарнірного бінокулярного ПНБ: модулі відкидаються окремо</title>
+<defs>
+<radialGradient id="lens" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#39ff88"/><stop offset=".55" stop-color="#18a85a"/><stop offset="1" stop-color="#062b18"/></radialGradient>
+<radialGradient id="heat" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#ffd27a"/><stop offset=".5" stop-color="#ff7a3d"/><stop offset="1" stop-color="#3a0d05"/></radialGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16384a"/><stop offset="1" stop-color="#0b1d2a"/></linearGradient>
+</defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="266" rx="135" ry="11" fill="#000" opacity=".25"/>
+
+<rect x="176" y="50" width="48" height="34" rx="6" fill="#3d4f58"/>
+<rect x="188" y="32" width="24" height="22" rx="4" fill="#1a252b"/>
+<rect x="150" y="96" width="100" height="22" rx="8" fill="#1a252b"/>
+<circle cx="160" cy="107" r="9" fill="#3d4f58"/><circle cx="240" cy="107" r="9" fill="#3d4f58"/>
+<rect x="104" y="118" width="80" height="96" rx="38" fill="#2b3a42" stroke="#1a252b" stroke-width="4"/>
+<circle cx="144" cy="166" r="35" fill="#1a252b"/><circle cx="144" cy="166" r="28" fill="url(#lens)"/><circle cx="134.2" cy="156.2" r="5.0" fill="#fff" opacity=".55"/>
+<g transform="rotate(-62 240 107)">
+<rect x="216" y="118" width="80" height="96" rx="38" fill="#2b3a42" stroke="#1a252b" stroke-width="4"/>
+<circle cx="256" cy="166" r="35" fill="#1a252b"/><circle cx="256" cy="166" r="28" fill="url(#lens)"/><circle cx="246.2" cy="156.2" r="5.0" fill="#fff" opacity=".55"/>
+</g>
+<path d="M300 150 a44 44 0 0 0 -30 -40" stroke="#39ff88" stroke-width="3" fill="none" stroke-dasharray="6 5"/>
+<path d="M266 104 l4 12 l10 -8z" fill="#39ff88"/>
+
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Логотип DEEP OPS">
+<title>Логотип DEEP OPS</title>
+<circle cx="32" cy="32" r="31" fill="#0b1d2a" stroke="#39ff88" stroke-width="2"/>
+<path d="M10 26 q5.5 -5 11 0 t11 0 t11 0 t11 0" stroke="#7fd6e3" stroke-width="2.5" fill="none"/>
+<path d="M20 34 l12 8 l12 -8" stroke="#39ff88" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+<path d="M24 44 l8 5 l8 -5" stroke="#39ff88" stroke-width="3" fill="none" stroke-linejoin="round" opacity=".6"/>
+<circle cx="32" cy="15" r="3" fill="#39ff88"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Навігаційна дошка бойового плавця">
+<title>Навігаційна дошка бойового плавця</title>
+<defs>
+<radialGradient id="lens" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#39ff88"/><stop offset=".55" stop-color="#18a85a"/><stop offset="1" stop-color="#062b18"/></radialGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d5a6e"/><stop offset="1" stop-color="#0e3445"/></linearGradient>
+</defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="266" rx="135" ry="11" fill="#000" opacity=".25"/>
+
+<rect x="70" y="92" width="260" height="130" rx="18" fill="#26343b" stroke="#1a252b" stroke-width="4"/>
+<rect x="46" y="130" width="30" height="54" rx="10" fill="#1a252b"/><rect x="324" y="130" width="30" height="54" rx="10" fill="#1a252b"/>
+<circle cx="150" cy="157" r="44" fill="#0c1418" stroke="#3d4f58" stroke-width="6"/>
+<path d="M150 121 l10 36 l-10 36 l-10 -36z" fill="#39ff88"/><path d="M150 157 l10 36 l-10 0z" fill="#c0392b"/>
+<circle cx="250" cy="134" r="22" fill="#0c1418" stroke="#3d4f58" stroke-width="5"/>
+<line x1="250" y1="134" x2="262" y2="124" stroke="#f2c94c" stroke-width="3"/>
+<rect x="228" y="168" width="46" height="30" rx="6" fill="#0c1418" stroke="#3d4f58" stroke-width="4"/>
+<text x="251" y="189" font-family="Arial, sans-serif" font-size="14" fill="#39ff88" text-anchor="middle">12:40</text>
+
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Панорамний ПНВ з чотирма трубами">
+<title>Панорамний ПНВ з чотирма трубами</title>
+<defs>
+<radialGradient id="lens" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#39ff88"/><stop offset=".55" stop-color="#18a85a"/><stop offset="1" stop-color="#062b18"/></radialGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16384a"/><stop offset="1" stop-color="#0b1d2a"/></linearGradient>
+</defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="266" rx="135" ry="11" fill="#000" opacity=".25"/>
+
+<rect x="170" y="48" width="60" height="34" rx="6" fill="#3d4f58"/>
+<rect x="186" y="30" width="28" height="22" rx="4" fill="#1a252b"/>
+<rect x="70" y="80" width="260" height="110" rx="34" fill="#2b3a42" stroke="#1a252b" stroke-width="4"/>
+<circle cx="108" cy="150" r="29" fill="#1a252b"/><circle cx="108" cy="150" r="22" fill="url(#lens)"/><circle cx="100.3" cy="142.3" r="4.0" fill="#fff" opacity=".55"/><circle cx="168" cy="138" r="34" fill="#1a252b"/><circle cx="168" cy="138" r="27" fill="url(#lens)"/><circle cx="158.6" cy="128.6" r="4.9" fill="#fff" opacity=".55"/><circle cx="232" cy="138" r="34" fill="#1a252b"/><circle cx="232" cy="138" r="27" fill="url(#lens)"/><circle cx="222.6" cy="128.6" r="4.9" fill="#fff" opacity=".55"/><circle cx="292" cy="150" r="29" fill="#1a252b"/><circle cx="292" cy="150" r="22" fill="url(#lens)"/><circle cx="284.3" cy="142.3" r="4.0" fill="#fff" opacity=".55"/>
+<rect x="182" y="196" width="36" height="26" rx="5" fill="#3d4f58"/>
+<circle cx="200" cy="232" r="9" fill="#1a252b"/>
+
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Цифровий монокуляр нічного бачення">
+<title>Цифровий монокуляр нічного бачення</title>
+<defs>
+<radialGradient id="lens" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#39ff88"/><stop offset=".55" stop-color="#18a85a"/><stop offset="1" stop-color="#062b18"/></radialGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d5a6e"/><stop offset="1" stop-color="#0e3445"/></linearGradient>
+</defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="266" rx="135" ry="11" fill="#000" opacity=".25"/>
+
+<rect x="100" y="104" width="190" height="96" rx="18" fill="#1f2b31" stroke="#1a252b" stroke-width="4"/>
+<rect x="286" y="112" width="34" height="80" rx="12" fill="#1a252b"/>
+<ellipse cx="320" cy="152" rx="7" ry="30" fill="url(#lens)"/>
+<rect x="66" y="122" width="38" height="60" rx="16" fill="#1a252b"/>
+<rect x="150" y="122" width="70" height="40" rx="6" fill="#0c1418"/>
+<path d="M156 150 l14 -12 l10 8 l14 -14 l20 18" stroke="#39ff88" stroke-width="3" fill="none"/>
+<circle cx="250" cy="134" r="7" fill="#c0392b"/><circle cx="250" cy="170" r="7" fill="#3d4f58"/>
+<rect x="150" y="172" width="70" height="10" rx="5" fill="#3d4f58"/>
+
+</svg>

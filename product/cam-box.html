@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Підводний бокс для екшн-камери — опис, характеристики й ціна в магазині DEEP OPS">
+  <meta name="author" content="Мацько Богдан Володимирович">
+  <title>Підводний бокс для екшн-камери | DEEP OPS</title>
+  <!-- Єдиний зовнішній файл стилів (CSS3, без JavaScript і фреймворків) -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/emblem.png">
+</head>
+<body id="top">
+
+  <!-- Шапка: фіксована (position: fixed), логотип з transform, назва з fade-in -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark"><img src="../images/emblem.png" alt="Емблема DEEP OPS: морський коник із тризубом" width="44" height="44"></span>
+        <span class="site-title">DEEP OPS · спорядження</span>
+      </a>
+
+      <!-- Кнопка мобільного меню без JS (checkbox hack) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger" title="Меню"><span></span></label>
+
+      <!-- Навігація: flexbox + transition: all 0.3s -->
+      <nav class="site-nav" aria-label="Головне меню">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <!-- Пункт із dropdown-меню (анімація висування через transform: translateY) -->
+          <li class="has-dropdown">
+            <a href="../catalog.html" class="active" aria-current="page">Каталог <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <ul class="dropdown">
+              <li><a href="../catalog.html#overview">Огляд</a></li>
+              <li><a href="../catalog.html#products">ПНВ і дайвінг</a></li>
+              <li><a href="../catalog.html#nvg-models">Моделі ПНБ (15)</a></li>
+              <li><a href="../catalog.html#brands">Схожі моделі з фото</a></li>
+              <li><a href="../catalog.html#apparel">Одяг DEEP OPS</a></li>
+              <li><a href="../catalog.html#guide">Як обрати</a></li>
+            </ul>
+          </li>
+          <li><a href="../lookbook.html">Фотожурнал</a></li>
+          <li><a href="../compare.html">Порівняння ПНВ</a></li>
+          <li><a href="../blog.html">Блог</a></li>
+          <li><a href="../contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основний контент: три блоки (CSS Grid) -->
+  <main class="container content">
+
+    <nav class="breadcrumbs" aria-label="Ви тут">
+      <a href="../index.html">Головна</a> <span aria-hidden="true">›</span>
+      <a href="../catalog.html">Каталог</a> <span aria-hidden="true">›</span>
+      <a href="../catalog.html#apparel">Одяг DEEP OPS</a> <span aria-hidden="true">›</span>
+      <span aria-current="page">Підводний бокс для екшн-камери</span>
+    </nav>
+
+    <!-- Картка товару: галерея на радіокнопках + інформація -->
+    <section class="block block-wide product slide-in">
+    <div class="p-gallery">
+      <input type="radio" name="gal" id="g-1" class="g-input" checked>
+      <input type="radio" name="gal" id="g-2" class="g-input">
+      <div class="g-stage">
+        <figure class="g-slide">
+          <img src="../images/products/cam-box.jpg" alt="Підводний бокс для екшн-камери — фото" width="800" height="600" class="fit-contain on-white">
+          <figcaption>Фото схожої моделі: підводний бокс для екшн-камери. Джерело: s3-us-west-2.amazonaws.com</figcaption>
+        </figure>
+        <figure class="g-slide">
+          <img src="../images/gear_cam_box.svg" alt="Підводний бокс для екшн-камери" width="800" height="600">
+          <figcaption>Ілюстрація DEEP OPS</figcaption>
+        </figure>
+      </div>
+      <div class="g-thumbs">
+        <label for="g-1" title="Фото 1"><img src="../images/products/cam-box.jpg" alt="Мініатюра 1: Підводний бокс для екшн-камери — фото" width="120" height="90" class="fit-contain on-white"></label>
+        <label for="g-2" title="Фото 2"><img src="../images/gear_cam_box.svg" alt="Мініатюра 2: Підводний бокс для екшн-камери" width="120" height="90"></label>
+      </div>
+    </div>
+      <div class="p-info">
+        <p class="p-tags"><span class="badge">Схожі товари · DEEP OPS</span> <span class="badge">Дайвінг</span></p>
+        <p class="brand">DEEP OPS</p>
+        <h1 class="p-title">Підводний бокс для екшн-камери</h1>
+        <p class="p-lead">Підводний бокс, який захищає екшн-камеру від води.</p>
+        <div class="p-price"><span class="price">1 600 грн <span class="eur">≈ 32 €</span></span></div>
+        <p class="price-note">Ціни в євро перераховано за офіційним курсом НБУ на 17.11.2026: 1 € = 49,99 грн.</p>
+      <p class="p-opt"><span class="opt-label">Колір:</span> <span class="opt-single">Прозорий</span></p>
+      <p class="p-opt"><span class="opt-label">Розмір:</span> <span class="opt-single">Сумісність — у картці виробника камери</span></p>
+        <div class="p-actions">
+          <a href="../contacts.html#order" class="btn-buy">Замовити</a>
+          <input type="checkbox" id="fav" class="fav-check">
+          <label for="fav" class="btn-fav"><span class="fav-off">♡ В обране</span><span class="fav-on">♥ В обраному</span></label>
+        </div>
+        <ul class="p-perks">
+          <li>Доставка Новою Поштою по всій Україні</li>
+          <li>Обмін і повернення — 14 днів</li>
+          <li>Консультація з підбору перед покупкою</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Вкладки на радіокнопках: опис / характеристики / доставка -->
+    <section class="block block-wide p-tabs">
+      <input type="radio" name="tab" id="t-1" class="t-input" checked>
+      <input type="radio" name="tab" id="t-2" class="t-input">
+      <input type="radio" name="tab" id="t-3" class="t-input">
+      <div class="t-labels" role="tablist">
+        <label for="t-1">Опис</label>
+        <label for="t-2">Характеристики</label>
+        <label for="t-3">Доставка й гарантія</label>
+      </div>
+      <div class="t-panels">
+        <div class="t-panel">
+          <p>Прозорий корпус з ущільнювачем і замком. Перед кожним зануренням перевіряйте ущільнювач на піщинки.</p>
+          <p>Сумісність залежить від моделі камери — уточніть її перед замовленням.</p>
+          <p class="p-analog">Схожі моделі відомих брендів: <a href="gopro-hero8-housing.html" class="link-anim">GoPro HERO8 Black Protective Housing</a>.</p>
+        </div>
+        <div class="t-panel">
+        <table class="spec-table">
+          <tr><th scope="row">Бренд</th><td>DEEP OPS</td></tr>
+          <tr><th scope="row">Колір</th><td>Прозорий</td></tr>
+          <tr><th scope="row">Розміри</th><td>Сумісність — у картці виробника камери</td></tr>
+          <tr><th scope="row">Матеріал</th><td>Полікарбонат</td></tr>
+          <tr><th scope="row">Сумісність</th><td>Уточнюється за моделлю камери</td></tr>
+          <tr><th scope="row">Кріплення</th><td>Стандартне для екшн-камер</td></tr>
+        </table>
+        </div>
+        <div class="t-panel">
+          <p><strong>Доставка.</strong> Новою Поштою або Укрпоштою по всій Україні, 1–3 дні. Самовивіз — за домовленістю. Прилади нічного бачення відправляємо лише після перевірки й з оголошеною вартістю.</p>
+          <p><strong>Оплата.</strong> Онлайн-оплата карткою через WayForPay або оплата при отриманні.</p>
+          <p><strong>Гарантія.</strong> 24 місяці на прилади нічного бачення, 12 місяців — на підводне спорядження. Одяг і аксесуари можна обміняти або повернути протягом 14 днів.</p>
+          <p class="price-note">Сайт — навчальний проєкт: замовлення не оформлюються, товари й ціни є прикладом.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block block-wide">
+      <h2>Схожі товари</h2>
+      <div class="cards related">
+        <article class="card mini-card ">
+          <div class="card-media">
+            <img src="../images/gear_cam_mount.svg" alt="Кріплення камери на шолом" width="400" height="300" loading="lazy">
+          </div>
+          <div class="card-body">
+            <p class="brand">DEEP OPS</p>
+            <h3><a href="cam-mount.html" class="card-link">Кріплення камери на шолом</a></h3>
+            <span class="price">750 грн <span class="eur">≈ 15 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card mini-card ">
+          <div class="card-media">
+            <img src="../images/gear_wetsuit.svg" alt="Гідрокостюм 5 мм" width="400" height="300" loading="lazy">
+          </div>
+          <div class="card-body">
+            <p class="brand">DEEP OPS</p>
+            <h3><a href="wetsuit.html" class="card-link">Гідрокостюм 5 мм</a></h3>
+            <span class="price">9 800 грн <span class="eur">≈ 196 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card mini-card ">
+          <div class="card-media">
+            <img src="../images/products/fins.jpg" alt="Ласти довгі" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="brand">DEEP OPS</p>
+            <h3><a href="fins.html" class="card-link">Ласти довгі</a></h3>
+            <span class="price">3 200 грн <span class="eur">≈ 64 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card mini-card ">
+          <div class="card-media">
+            <img src="../images/products/hood.jpg" alt="Неопреновий капюшон 5 мм" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="brand">DEEP OPS</p>
+            <h3><a href="hood.html" class="card-link">Неопреновий капюшон 5 мм</a></h3>
+            <span class="price">1 350 грн <span class="eur">≈ 27 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+      <nav class="p-pager" aria-label="Сусідні товари">
+        <a href="mask.html" class="pager-prev">← Маска малого об'єму</a>
+        <a href="../catalog.html#apparel" class="pager-up">Усі товари розділу</a>
+        <a href="cam-mount.html" class="pager-next">Кріплення камери на шолом →</a>
+      </nav>
+    </section>
+
+  </main>
+
+  <!-- Футер: копірайт, соцмережі з bounce-анімацією, кнопка «нагору» -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; 2026 Мацько Богдан. DEEP OPS — навчальний проєкт на чистому HTML і CSS3.</p>
+        <p class="disclaimer">Магазин не пов'язаний з підрозділами, згаданими на сайті.</p>
+      </div>
+      <ul class="social">
+        <li><a href="mailto:shop@deep-ops.example.com" aria-label="E-mail"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18v12H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></li>
+        <li><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M21 3L3 11l7 3 3 7z M10 14l11-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="13.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 7l1.5-3h3L15 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back-to-top: плавний скрол через scroll-behavior: smooth -->
+  <a href="#top" class="to-top" aria-label="Повернутися нагору">&#8593;</a>
+
+</body>
+</html>

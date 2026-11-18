@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог: ПНВ, ребризери, навігаційні дошки, буксирувальники">
+  <meta name="author" content="Мацько Богдан Володимирович">
+  <title>Каталог | DEEP OPS</title>
+  <!-- Єдиний зовнішній файл стилів (CSS3, без JavaScript і фреймворків) -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/emblem.png">
+</head>
+<body id="top">
+
+  <!-- Шапка: фіксована (position: fixed), логотип з transform, назва з fade-in -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><img src="images/emblem.png" alt="Емблема DEEP OPS: морський коник із тризубом" width="44" height="44"></span>
+        <span class="site-title">DEEP OPS · спорядження</span>
+      </a>
+
+      <!-- Кнопка мобільного меню без JS (checkbox hack) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger" title="Меню"><span></span></label>
+
+      <!-- Навігація: flexbox + transition: all 0.3s -->
+      <nav class="site-nav" aria-label="Головне меню">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <!-- Пункт із dropdown-меню (анімація висування через transform: translateY) -->
+          <li class="has-dropdown">
+            <a href="catalog.html" class="active" aria-current="page">Каталог <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <ul class="dropdown">
+              <li><a href="catalog.html#overview">Огляд</a></li>
+              <li><a href="catalog.html#products">ПНВ і дайвінг</a></li>
+              <li><a href="catalog.html#nvg-models">Моделі ПНБ (15)</a></li>
+              <li><a href="catalog.html#brands">Схожі моделі з фото</a></li>
+              <li><a href="catalog.html#apparel">Одяг DEEP OPS</a></li>
+              <li><a href="catalog.html#guide">Як обрати</a></li>
+            </ul>
+          </li>
+          <li><a href="lookbook.html">Фотожурнал</a></li>
+          <li><a href="compare.html">Порівняння ПНВ</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основний контент: три блоки (CSS Grid) -->
+  <main class="container content">
+    <h1 class="page-title">Каталог</h1>
+
+    <!-- Блок 1: текст з анімацією slide-in -->
+    <section class="block slide-in" id="overview">
+      <h2>Огляд</h2>
+      <p>Натисніть на будь-яку картку, щоб відкрити сторінку товару з описом, характеристиками та фото. У каталозі 8 позицій основного спорядження (прилади нічного бачення та підводне спорядження), 20 схожих моделей відомих брендів із фотожурналу та 27 позицій власного одягу й аксесуарів. Усі ціни — у гривнях і євро. Як ці речі виглядають на людях — у <a href="lookbook.html" class="link-anim">фотожурналі</a>.</p>
+      <p>Наведіть курсор на картку: вона піднімається, отримує зелене світіння, а фото переходить у «режим нічного бачення» завдяки CSS-фільтру. Головна характеристика відкривається анімованим <code>clip-path</code>. Не знаєте, який ПНВ обрати? Дивіться <a href="compare.html" class="link-anim">порівняння</a>.</p>
+    </section>
+
+    <!-- Блок 3: акордеон «Як обрати» -->
+    <section class="block span-2" id="guide">
+      <h2>Як обрати</h2>
+      <div class="accordion">
+        <div class="acc-item">
+          <input type="checkbox" id="guide0" class="acc-toggle" checked>
+          <label for="guide0" class="acc-title">1. Визначте бюджет</label>
+          <div class="acc-body"><div class="acc-inner"><p>Цифровий монокуляр — від 15 тис. грн (≈ 300 €); аналоговий Gen 2+ — від 75 тис. грн (≈ 1 500 €); бінокуляр і панорамний ПНВ — для тих, кому потрібне максимальне поле зору.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <input type="checkbox" id="guide1" class="acc-toggle">
+          <label for="guide1" class="acc-title">2. Монокуляр чи бінокуляр</label>
+          <div class="acc-body"><div class="acc-inner"><p>Монокуляр легший і залишає одне око адаптованим до темряви. Бінокуляр дає відчуття глибини, що важливо при русі й керуванні човном.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <input type="checkbox" id="guide2" class="acc-toggle">
+          <label for="guide2" class="acc-title">3. Ребризер — лише після навчання</label>
+          <div class="acc-body"><div class="acc-inner"><p>Кисневий ребризер працює тільки на малих глибинах і вимагає спеціальної підготовки. Продаємо лише за наявності сертифіката.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <input type="checkbox" id="guide3" class="acc-toggle">
+          <label for="guide3" class="acc-title">4. Догляд після моря</label>
+          <div class="acc-body"><div class="acc-inner"><p>Промивайте спорядження прісною водою, сушіть у тіні, ПНВ зберігайте із закритою кришкою.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 2: картки товарів з hover-трансформаціями та фільтром ПНВ -->
+    <section class="block block-wide" id="products">
+      <h2>ПНВ і підводне спорядження</h2>
+      <div class="cards">
+        <article class="card" id="p-nvg-pano">
+          <div class="card-media">
+            <img src="images/nvg_panoramic.svg" alt="Панорамний ПНВ, 4 труби" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">Поле зору 97°</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/nvg-pano.html" class="card-link">Панорамний ПНВ, 4 труби</a></h3>
+            <p>Gen 2+, поле зору ~97°, кріплення на шолом.</p>
+            <span class="price">389 000 грн <span class="eur">≈ 7 782 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card" id="p-nvg-bino">
+          <div class="card-media">
+            <img src="images/nvg_binocular.svg" alt="Бінокулярний ПНВ" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">Поле зору 40°</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/nvg-bino.html" class="card-link">Бінокулярний ПНВ</a></h3>
+            <p>Gen 2+, два ЕОП, відчуття глибини, поле зору ~40°.</p>
+            <span class="price">168 000 грн <span class="eur">≈ 3 361 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card" id="p-nvg-mono">
+          <div class="card-media">
+            <img src="images/nvg_monocular.svg" alt="Монокуляр ПНВ" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">Gen 2+</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/nvg-mono.html" class="card-link">Монокуляр ПНВ</a></h3>
+            <p>Gen 2+, легкий, можна носити на шоломі або в руці.</p>
+            <span class="price">74 500 грн <span class="eur">≈ 1 490 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card" id="p-nvg-digital">
+          <div class="card-media">
+            <img src="images/nvg_digital.svg" alt="Цифровий монокуляр" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">ІЧ-підсвітка</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/nvg-digital.html" class="card-link">Цифровий монокуляр</a></h3>
+            <p>Бюджетний ПНВ з ІЧ-підсвіткою та записом відео.</p>
+            <span class="price">14 900 грн <span class="eur">≈ 298 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card" id="p-rebreather">
+          <div class="card-media">
+            <img src="images/rebreather.svg" alt="Кисневий ребризер" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">Без бульбашок</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/rebreather.html" class="card-link">Кисневий ребризер</a></h3>
+            <p>Замкнутий цикл, без бульбашок, до ~4 год роботи.</p>
+            <span class="price">420 000 грн <span class="eur">≈ 8 402 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card" id="p-nav-board">
+          <div class="card-media">
+            <img src="images/nav_board.svg" alt="Навігаційна дошка" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">Компас + таймер</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/nav-board.html" class="card-link">Навігаційна дошка</a></h3>
+            <p>Компас, глибиномір і таймер для навігації під водою.</p>
+            <span class="price">21 500 грн <span class="eur">≈ 430 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card" id="p-dpv">
+          <div class="card-media">
+            <img src="images/dpv.svg" alt="Буксирувальник DPV" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">До 90 хв</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/dpv.html" class="card-link">Буксирувальник DPV</a></h3>
+            <p>Підводний буксирувальник, до ~90 хв роботи.</p>
+            <span class="price">156 000 грн <span class="eur">≈ 3 121 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card" id="p-dive-light">
+          <div class="card-media">
+            <img src="images/dive_light.svg" alt="Тактичний ліхтар" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="card-overlay">Біле + червоне</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/dive-light.html" class="card-link">Тактичний ліхтар</a></h3>
+            <p>Підводний, біле й червоне світло, до 100 м глибини.</p>
+            <span class="price">6 800 грн <span class="eur">≈ 136 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Додатковий блок: 15 реальних моделей ПНБ з фільтрами на радіокнопках (без JS) -->
+    <section class="block block-wide" id="nvg-models">
+      <h2>Моделі ПНБ: від PVS-14 до GPNVG-18</h2>
+      <p class="price-info">Довідковий каталог 15 реальних приладів нічного бачення. Фільтри працюють разом: наприклад, «Панорамний» + «Авіаційні» залишить AN/AVS-10. Для 14 моделей показано фото, для Thales Bi-NYX поки що схема оптичного типу. Натисніть на картку, щоб відкрити сторінку моделі з описом і характеристиками. Продаж і вивезення військових ПНБ регулюються експортним законодавством (у США — ITAR), тому ціни лише за запитом.</p>
+    <div class="nvg-filter">
+      <input type="radio" name="nvg-s" id="nf-s-all" class="nf-input" checked>
+      <input type="radio" name="nvg-s" id="nf-s-mono" class="nf-input">
+      <input type="radio" name="nvg-s" id="nf-s-bioc" class="nf-input">
+      <input type="radio" name="nvg-s" id="nf-s-bino" class="nf-input">
+      <input type="radio" name="nvg-s" id="nf-s-lowp" class="nf-input">
+      <input type="radio" name="nvg-s" id="nf-s-art" class="nf-input">
+      <input type="radio" name="nvg-s" id="nf-s-fus" class="nf-input">
+      <input type="radio" name="nvg-s" id="nf-s-pano" class="nf-input">
+      <input type="radio" name="nvg-p" id="nf-p-all" class="nf-input" checked>
+      <input type="radio" name="nvg-p" id="nf-p-ground" class="nf-input">
+      <input type="radio" name="nvg-p" id="nf-p-avia" class="nf-input">
+      <div class="filter-bar" role="group" aria-label="Фільтр за оптичною схемою"><span class="filter-title">Оптична схема:</span> <label for="nf-s-all">Усі <span>15</span></label> <label for="nf-s-mono">Монокуляр <span>3</span></label> <label for="nf-s-bioc">Біокуляр <span>1</span></label> <label for="nf-s-bino">Бінокуляр <span>4</span></label> <label for="nf-s-lowp">Низькопрофільний <span>1</span></label> <label for="nf-s-art">Шарнірний <span>3</span></label> <label for="nf-s-fus">З тепловізором <span>1</span></label> <label for="nf-s-pano">Панорамний <span>2</span></label></div>
+      <div class="filter-bar" role="group" aria-label="Фільтр за призначенням"><span class="filter-title">Призначення:</span> <label for="nf-p-all">Усі <span>15</span></label> <label for="nf-p-ground">Наземні <span>13</span></label> <label for="nf-p-avia">Авіаційні <span>2</span></label></div>
+      <p class="nvg-empty">За цим поєднанням фільтрів моделей немає. Оберіть іншу схему або «Усі».</p>
+      <ul class="cards nvg-grid">
+        <li class="card nvg-card s-mono p-ground" id="nvg-pvs14">
+          <div class="card-media">
+            <img src="images/products/pvs14.jpg" alt="AN/PVS-14 — фото" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Монокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">L3Harris, Elbit America · США</p>
+            <h3><a href="product/pvs14.html" class="card-link">AN/PVS-14</a> <small>Монокуляр Gen III</small></h3>
+            <p class="nvg-spec">1 трубка 18 мм · поле зору 40°</p>
+            <p>Класичний армійський «ПВС»: один об'єктив і один окуляр перед одним оком. Носять на шоломі, в руці або за прицілом.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-mono p-ground" id="nvg-pvs18">
+          <div class="card-media">
+            <img src="images/products/pvs18.png" alt="AN/PVS-18 — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Монокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">L3 (EOTech) · США</p>
+            <h3><a href="product/pvs18.html" class="card-link">AN/PVS-18</a> <small>M983</small></h3>
+            <p class="nvg-spec">1 трубка 18 мм · герметичний корпус</p>
+            <p>Компактний монокуляр, який в італійському військовому каталозі вказано під двома позначеннями — AN/PVS-18 і M983. Швидко переставляється на ліве чи праве око.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-mono p-ground" id="nvg-argus16">
+          <div class="card-media">
+            <img src="images/products/argus16.png" alt="THEON ARGUS 16 — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Монокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">THEON · Греція</p>
+            <h3><a href="product/argus16.html" class="card-link">THEON ARGUS 16</a> <small>Сімейство ARGUS</small></h3>
+            <p class="nvg-spec">1 трубка 16 мм · менший і легший за 18-мм прилади</p>
+            <p>Європейський багатоцільовий монокуляр: у руці, на шоломі або на зброї. Число 16 — діаметр підсилювача зображення в міліметрах.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-bioc p-ground" id="nvg-pvs7">
+          <div class="card-media">
+            <img src="images/products/pvs7.jpg" alt="AN/PVS-7B/D — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Біокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">L3Harris, Elbit America · США</p>
+            <h3><a href="product/pvs7.html" class="card-link">AN/PVS-7B/D</a> <small>Біокулярні окуляри</small></h3>
+            <p class="nvg-spec">1 трубка · 2 окуляри · вбудований ІЧ-підсвічувач</p>
+            <p>Один центральний об'єктив і одна трубка, а призми розводять зображення на два окуляри. Обидва ока бачать ту саму картинку, тому справжнього об'ємного зору немає.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-bino p-ground" id="nvg-pvs15">
+          <div class="card-media">
+            <img src="images/products/pvs15.jpg" alt="AN/PVS-15 — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Бінокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">L3Harris · США</p>
+            <h3><a href="product/pvs15.html" class="card-link">AN/PVS-15</a> <small>M953</small></h3>
+            <p class="nvg-spec">2 трубки · поле зору 40° · водонепроникний</p>
+            <p>Класичний двотрубний ПНБ: спереду два окремі об'єктиви, по одному на кожне око, тож відстань оцінюється значно краще. M953 — заводське позначення L3.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-lowp p-ground" id="nvg-pvs21">
+          <div class="card-media">
+            <img src="images/products/pvs21.png" alt="Steiner AN/PVS-21 — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Низькопрофільний бінокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">Steiner · США</p>
+            <h3><a href="product/pvs21.html" class="card-link">Steiner AN/PVS-21</a> <small>Low Profile NVG</small></h3>
+            <p class="nvg-spec">2 трубки поза лінією зору · виступає на 7–10 см менше</p>
+            <p>Пласка конструкція: дзеркала й призми виносять трубки вбік, а око дивиться крізь прозорий світлороздільник, тому периферійний зір зберігається. Знято з виробництва.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-art p-ground" id="nvg-dtnvs">
+          <div class="card-media">
+            <img src="images/products/dtnvs.png" alt="ACTinBlack DTNVS — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Шарнірний бінокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">ACTinBlack · Люксембург</p>
+            <h3><a href="product/dtnvs.html" class="card-link">ACTinBlack DTNVS</a> <small>Dual Tube Night Vision System</small></h3>
+            <p class="nvg-spec">2 трубки · модулі відкидаються й вимикаються окремо</p>
+            <p>Два циліндричні модулі на центральній перемичці. Кожен відкидається окремо, тож прилад можна використовувати як монокуляр поруч із тепловізійним прицілом.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-art p-ground" id="nvg-nyx">
+          <div class="card-media">
+            <img src="images/products/nyx.png" alt="THEON NYX — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Шарнірний бінокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">THEON · Греція</p>
+            <h3><a href="product/nyx.html" class="card-link">THEON NYX</a> <small>Двотрубний ПНБ, 2013</small></h3>
+            <p class="nvg-spec">2 трубки 16 або 18 мм · модулі відкидаються окремо</p>
+            <p>Грецька модель: у складеному положенні модулі розходяться в боки вздовж контуру шолома. На озброєнні армій Німеччини, Австрії, Австралії та інших країн.</p>
+            <p class="nvg-confuse"><strong>Не плутати з</strong> <a href="product/thales-binyx.html" class="link-anim">Thales Bi-NYX</a>: інший виробник, інша країна; спільне лише слово NYX у назві.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-art p-ground" id="nvg-pvs31a">
+          <div class="card-media">
+            <img src="images/products/pvs31a.jpg" alt="L3Harris AN/PVS-31A — фото" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Шарнірний бінокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">L3Harris · США</p>
+            <h3><a href="product/pvs31a.html" class="card-link">L3Harris AN/PVS-31A</a> <small>BNVD</small></h3>
+            <p class="nvg-spec">2 трубки · поле зору 40° · ≈ 450 г</p>
+            <p>Легкий низькопрофільний бінокуляр із двома поворотними модулями. USSOCOM прийняв його на заміну AN/PVS-15.</p>
+            <p class="nvg-confuse"><strong>Не плутати з</strong> <a href="product/pvs31d.html" class="link-anim">Elbit America AN/PVS-31D</a>: той самий тип, але інший виробник (Elbit) і власний корпус.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-bino p-ground" id="nvg-pvs31d">
+          <div class="card-media">
+            <img src="images/products/pvs31d.jpg" alt="Elbit America AN/PVS-31D — фото" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Бінокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">Elbit Systems of America · США</p>
+            <h3><a href="product/pvs31d.html" class="card-link">Elbit America AN/PVS-31D</a> <small>F5032 · SBNVG</small></h3>
+            <p class="nvg-spec">2 трубки · ≈ 500 г · специфікація USMC SBNVG</p>
+            <p>Окрема модель Elbit для Корпусу морської піхоти США. Корпус розроблено на основі THEON NYX. F5032 — заводська назва, зручна для пошуку фото.</p>
+            <p class="nvg-confuse"><strong>Не плутати з</strong> <a href="product/pvs31a.html" class="link-anim">L3Harris AN/PVS-31A</a>: інший виробник і корпус, хоч номер схожий.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-bino p-ground" id="nvg-thales-binyx">
+          <div class="card-media">
+            <img src="images/nvg_binocular.svg" alt="Схема типу «бінокуляр» для Thales Bi-NYX" width="400" height="300" loading="lazy" class="nvg-mode">
+            <span class="nvg-schematic">Схема типу, не фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Бінокуляр</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">Thales · Франція</p>
+            <h3><a href="product/thales-binyx.html" class="card-link">Thales Bi-NYX</a> <small>Стереоскопічні окуляри</small></h3>
+            <p class="nvg-spec">2 трубки Photonis · поле зору 47° · < 460 г</p>
+            <p>Французька модель на базі Thales NightRise: два об'єктиви, два окуляри, ширше поле зору за типові 40°. Перші партії французька армія отримала у 2024 році.</p>
+            <p class="nvg-confuse"><strong>Не плутати з</strong> <a href="product/nyx.html" class="link-anim">THEON NYX</a>: грецький прилад іншого виробника.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-bino p-avia" id="nvg-avs9">
+          <div class="card-media">
+            <img src="images/products/avs9.jpg" alt="Elbit AN/AVS-9 — фото" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Бінокуляр</span> <span class="badge badge-avia">Авіаційні</span></p>
+            <p class="brand">Elbit Systems of America · США</p>
+            <h3><a href="product/avs9.html" class="card-link">Elbit AN/AVS-9</a> <small>F4949</small></h3>
+            <p class="nvg-spec">2 трубки · відступ окуляра 25 мм · компактний батарейний блок</p>
+            <p>Двотрубні окуляри для льотних екіпажів, стандарт для ВПС і ВМС США та понад 60 країн. Великий відступ окуляра дозволяє літати в звичайних окулярах.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-fus p-ground" id="nvg-envgb">
+          <div class="card-media">
+            <img src="images/products/envgb.png" alt="ENVG-B — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Бінокуляр + тепловізор</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">L3Harris · США</p>
+            <h3><a href="product/envgb.html" class="card-link">ENVG-B</a> <small>AN/PSQ-42</small></h3>
+            <p class="nvg-spec">2 трубки + неохолоджуваний тепловізор · режим злиття</p>
+            <p>Поєднує зображення двох трубок нічного бачення та окремого тепловізійного сенсора. Працює в дим, туман і пил; армія США видала понад 10 000 комплектів.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-pano p-avia" id="nvg-avs10">
+          <div class="card-media">
+            <img src="images/products/avs10.jpg" alt="AN/AVS-10 PNVG — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Панорамний</span> <span class="badge badge-avia">Авіаційні</span></p>
+            <p class="brand">L3 · США</p>
+            <h3><a href="product/avs10.html" class="card-link">AN/AVS-10 PNVG</a> <small>Panoramic NVG</small></h3>
+            <p class="nvg-spec">4 трубки · поле зору 97° × 40°</p>
+            <p>Авіаційна панорамна система з чотирма трубками — більш ніж удвічі ширший огляд за звичайні 40°. Її конструкцію L3Harris узяв за основу наземного GPNVG.</p>
+            <p class="nvg-confuse"><strong>Не плутати з</strong> <a href="product/gpnvg18.html" class="link-anim">L3Harris GPNVG-18</a>: наземна версія з тим самим полем зору 97°.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+        <li class="card nvg-card s-pano p-ground" id="nvg-gpnvg18">
+          <div class="card-media">
+            <img src="images/products/gpnvg18.png" alt="L3Harris GPNVG-18 — фото" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+          </div>
+          <div class="card-body">
+            <p class="nvg-tags"><span class="badge">Панорамний</span> <span class="badge badge-ground">Наземні</span></p>
+            <p class="brand">L3Harris · США</p>
+            <h3><a href="product/gpnvg18.html" class="card-link">L3Harris GPNVG-18</a> <small>GPNVG</small></h3>
+            <p class="nvg-spec">4 трубки 18 мм · поле зору 97° × 40° · < 800 г</p>
+            <p>Той самий «чотириокий»: чотири об'єктиви, крайні розвернуті в боки. Кожен модуль можна зняти й живити окремо — вийде ручний монокуляр.</p>
+            <p class="nvg-confuse"><strong>Не плутати з</strong> <a href="product/avs10.html" class="link-anim">AN/AVS-10 PNVG</a>: авіаційний попередник.</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </li>
+      </ul>
+      <p class="nvg-found">Показано моделей: </p>
+    </div>
+    </section>
+
+    <!-- Додатковий блок: схожі моделі відомих брендів з фотожурналу -->
+    <section class="block block-wide" id="brands">
+      <h2>Схожі моделі з фото</h2>
+      <p class="price-info">Моделі відомих брендів, схожі на речі з фотожурналу (за кроєм, формою чи кольором). «Ймовірно» — збіг за принтом, «Схожа модель» — аналог. Ціни орієнтовні, за даними магазинів ЄС і США станом на листопад 2026. Ціни в євро перераховано за офіційним курсом НБУ на 17.11.2026: 1 € = 49,99 грн.</p>
+      <h3 class="cat-title" id="brands-field">Польовий одяг і аксесуари</h3>
+      <div class="cards">
+        <article class="card gear-card brand-card" id="p-hm-hoodie">
+          <div class="card-media">
+            <img src="images/products/hm-hoodie.jpg" alt="H&amp;M Худі Space International" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №7</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Ймовірно H&amp;M Space International</span>
+            <p class="brand">H&amp;M</p>
+            <h3><a href="product/hm-hoodie.html" class="card-link">Худі Space International</a></h3>
+            <p>Колір: Чорний, білий принт<br>Розміри: Лише вживані, різні розміри</p>
+            <span class="price price-na">Ціна за запитом</span>
+            <p class="price-note">Нових у продажу немає, трапляються лише вживані оголошення — ціну не встановлено.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-helikon-edc-lite">
+          <div class="card-media">
+            <img src="images/products/helikon-edc-lite.jpg" alt="Helikon-Tex EDC Lite Backpack 21 л" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №2, №3</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Helikon-Tex</p>
+            <h3><a href="product/helikon-edc-lite.html" class="card-link">EDC Lite Backpack 21 л</a></h3>
+            <p>Колір: Олива, чорний, койот<br>Розміри: 21 л</p>
+            <span class="price">≈ 3 000 грн <span class="eur">≈ 60 €</span></span>
+            <p class="price-note">Рекомендована ціна в ЄС ≈ 60 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-helikon-boonie">
+          <div class="card-media">
+            <img src="images/products/helikon-boonie.jpg" alt="Helikon-Tex Boonie Mk2 Hat, NyCo Ripstop" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №5, №6</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Helikon-Tex</p>
+            <h3><a href="product/helikon-boonie.html" class="card-link">Boonie Mk2 Hat, NyCo Ripstop</a></h3>
+            <p>Колір: Олива, MultiCam та ін.<br>Розміри: S–XL</p>
+            <span class="price">≈ 1 000 грн <span class="eur">≈ 20 €</span></span>
+            <p class="price-note">У магазинах ЄС ≈ 16–23 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-petzl-tikka">
+          <div class="card-media">
+            <img src="images/products/petzl-tikka.jpg" alt="Petzl TIKKA" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №7</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Petzl</p>
+            <h3><a href="product/petzl-tikka.html" class="card-link">TIKKA</a></h3>
+            <p>Колір: Чорний<br>Розміри: Один розмір</p>
+            <span class="price">≈ 1 600 грн <span class="eur">≈ 32 €</span></span>
+            <p class="price-note">У магазинах ЄС ≈ 27–37 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-peltor-comtac8">
+          <div class="card-media">
+            <img src="images/products/peltor-comtac8.jpg" alt="3M PELTOR ComTac VIII" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №3, №14</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">3M PELTOR</p>
+            <h3><a href="product/peltor-comtac8.html" class="card-link">ComTac VIII</a></h3>
+            <p>Колір: Олива, койот<br>Розміри: Один розмір</p>
+            <span class="price">≈ 32 490 грн <span class="eur">≈ 650 €</span></span>
+            <p class="price-note">Версія Hearing Defender ≈ 650 €, з комунікацією ≈ 900 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-tt-plate-carrier-lc">
+          <div class="card-media">
+            <img src="images/products/tt-plate-carrier-lc.jpg" alt="Tasmanian Tiger TT Plate Carrier LC" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №7, №14</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Tasmanian Tiger</p>
+            <h3><a href="product/tt-plate-carrier-lc.html" class="card-link">TT Plate Carrier LC</a></h3>
+            <p>Колір: Олива, чорний, койот<br>Розміри: Під пластини 30×25 см</p>
+            <span class="price">≈ 10 500 грн <span class="eur">≈ 210 €</span></span>
+            <p class="price-note">У ЄС ≈ 210 €, без бронепластин.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-crye-g3">
+          <div class="card-media">
+            <img src="images/products/crye-g3.jpg" alt="Crye Precision G3 Combat Pant" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №3, №7</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Crye Precision</p>
+            <h3><a href="product/crye-g3.html" class="card-link">G3 Combat Pant</a></h3>
+            <p>Колір: MultiCam<br>Розміри: Талія 28–42, різна довжина</p>
+            <span class="price">≈ 15 450 грн <span class="eur">≈ 309 €</span></span>
+            <p class="price-note">У США ≈ $317–370; наколінники продаються окремо.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-ufpro-striker-x">
+          <div class="card-media">
+            <img src="images/products/ufpro-striker-x.jpg" alt="UF PRO Striker X Gen.2, M81 Woodland" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №8</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">UF PRO</p>
+            <h3><a href="product/ufpro-striker-x.html" class="card-link">Striker X Gen.2, M81 Woodland</a></h3>
+            <p>Колір: Woodland<br>Розміри: 30–40</p>
+            <span class="price">≈ 16 950 грн <span class="eur">≈ 339 €</span></span>
+            <p class="price-note">У ЄС ≈ 339 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-lowa-zephyr">
+          <div class="card-media">
+            <img src="images/products/lowa-zephyr.jpg" alt="LOWA Zephyr MK2 GTX Mid" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №8</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">LOWA</p>
+            <h3><a href="product/lowa-zephyr.html" class="card-link">Zephyr MK2 GTX Mid</a></h3>
+            <p>Колір: Темно-коричневий, койот<br>Розміри: UK 3–15</p>
+            <span class="price">≈ 10 000 грн <span class="eur">≈ 200 €</span></span>
+            <p class="price-note">Рекомендована ціна в ЄС ≈ 199–200 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-mechanix-original">
+          <div class="card-media">
+            <img src="images/products/mechanix-original.jpg" alt="Mechanix Wear The Original, Coyote" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №8, №11, №14</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Mechanix Wear</p>
+            <h3><a href="product/mechanix-original.html" class="card-link">The Original, Coyote</a></h3>
+            <p>Колір: Койот<br>Розміри: S–XXL</p>
+            <span class="price">≈ 1 500 грн <span class="eur">≈ 30 €</span></span>
+            <p class="price-note">Рекомендована ціна в ЄС ≈ 30 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-helikon-bandicoot">
+          <div class="card-media">
+            <img src="images/products/helikon-bandicoot.jpg" alt="Helikon-Tex Bandicoot Waist Pack" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №8, №11</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Helikon-Tex</p>
+            <h3><a href="product/helikon-bandicoot.html" class="card-link">Bandicoot Waist Pack</a></h3>
+            <p>Колір: Олива, чорний, койот<br>Розміри: 2,7 л</p>
+            <span class="price">≈ 1 750 грн <span class="eur">≈ 35 €</span></span>
+            <p class="price-note">Рекомендована ціна в ЄС ≈ 35–40 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+      <h3 class="cat-title" id="brands-dive">Дайвінг</h3>
+      <div class="cards">
+        <article class="card gear-card brand-card" id="p-aqualung-micromask">
+          <div class="card-media">
+            <img src="images/products/aqualung-micromask.jpg" alt="Aqua Lung Micromask X" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №9, №10</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Aqua Lung</p>
+            <h3><a href="product/aqualung-micromask.html" class="card-link">Micromask X</a></h3>
+            <p>Колір: Чорний<br>Розміри: Один розмір</p>
+            <span class="price">≈ 3 250 грн <span class="eur">≈ 65 €</span></span>
+            <p class="price-note">У ЄС ≈ 64–65 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-scubapro-jetfin">
+          <div class="card-media">
+            <img src="images/products/scubapro-jetfin.jpg" alt="SCUBAPRO Jet Fin" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №9</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">SCUBAPRO</p>
+            <h3><a href="product/scubapro-jetfin.html" class="card-link">Jet Fin</a></h3>
+            <p>Колір: Чорний<br>Розміри: S–XXL</p>
+            <span class="price">≈ 11 950 грн <span class="eur">≈ 239 €</span></span>
+            <p class="price-note">У ЄС ≈ 227–240 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-fourth-argonaut">
+          <div class="card-media">
+            <img src="images/products/fourth-argonaut.jpg" alt="Fourth Element Argonaut 3.0, сухий гідрокостюм" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №9, №10</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Fourth Element</p>
+            <h3><a href="product/fourth-argonaut.html" class="card-link">Argonaut 3.0, сухий гідрокостюм</a></h3>
+            <p>Колір: Чорний<br>Розміри: Шиється під мірки (BIOMAP)</p>
+            <span class="price">≈ 165 720 грн <span class="eur">≈ 3 315 €</span></span>
+            <p class="price-note">У США від $3 650; ціна залежить від комплектації.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-opscore-bump">
+          <div class="card-media">
+            <img src="images/products/opscore-bump.jpg" alt="Ops-Core FAST Bump High Cut" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №9, №10</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Ops-Core</p>
+            <h3><a href="product/opscore-bump.html" class="card-link">FAST Bump High Cut</a></h3>
+            <p>Колір: Ranger Green, чорний, tan<br>Розміри: M, L, XL</p>
+            <span class="price">≈ 30 490 грн <span class="eur">≈ 610 €</span></span>
+            <p class="price-note">У ЄС ≈ 610 €; небалістичний шолом.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-diverite-slate">
+          <div class="card-media">
+            <img src="images/gear_slate.svg" alt="Dive Rite Wrist Slate" width="400" height="300" loading="lazy">
+            <span class="card-overlay">Фото №9, №10</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Dive Rite</p>
+            <h3><a href="product/diverite-slate.html" class="card-link">Wrist Slate</a></h3>
+            <p>Колір: Білий<br>Розміри: Один розмір</p>
+            <span class="price">≈ 700 грн <span class="eur">≈ 14 €</span></span>
+            <p class="price-note">≈ 13–14 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-gopro-hero8-housing">
+          <div class="card-media">
+            <img src="images/products/gopro-hero8-housing.png" alt="GoPro HERO8 Black Protective Housing" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №10</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">GoPro</p>
+            <h3><a href="product/gopro-hero8-housing.html" class="card-link">HERO8 Black Protective Housing</a></h3>
+            <p>Колір: Прозорий<br>Розміри: Лише для GoPro HERO8 Black</p>
+            <span class="price">≈ 2 300 грн <span class="eur">≈ 46 €</span></span>
+            <p class="price-note">У ЄС ≈ 46 €.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+      <h3 class="cat-title" id="brands-marine">Морська колекція</h3>
+      <div class="cards">
+        <article class="card gear-card brand-card" id="p-miltec-tank">
+          <div class="card-media">
+            <img src="images/products/miltec-tank.jpg" alt="Mil-Tec Blue/White Striped Sailor Tank Top" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №13</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Mil-Tec</p>
+            <h3><a href="product/miltec-tank.html" class="card-link">Blue/White Striped Sailor Tank Top</a></h3>
+            <p>Колір: Синьо-білий<br>Розміри: S–XXL</p>
+            <span class="price">≈ 500 грн <span class="eur">≈ 10 €</span></span>
+            <p class="price-note">Орієнтовно ≈ 8–13 € (як інші майки Mil-Tec у ЄС).</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-rothco-beret">
+          <div class="card-media">
+            <img src="images/products/rothco-beret.jpg" alt="Rothco G.I. Style Beret, Navy Blue" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №13</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Rothco</p>
+            <h3><a href="product/rothco-beret.html" class="card-link">G.I. Style Beret, Navy Blue</a></h3>
+            <p>Колір: Темно-синій<br>Розміри: 6 1/2 – 7 3/4</p>
+            <span class="price">≈ 900 грн <span class="eur">≈ 18 €</span></span>
+            <p class="price-note">У США від $19,99.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card brand-card" id="p-oakley-mframe3">
+          <div class="card-media">
+            <img src="images/products/oakley-mframe3.jpg" alt="Oakley SI Ballistic M Frame 3.0, сіра лінза" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото моделі</span>
+            <span class="card-overlay">Фото №14</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Схожа модель</span>
+            <p class="brand">Oakley SI</p>
+            <h3><a href="product/oakley-mframe3.html" class="card-link">Ballistic M Frame 3.0, сіра лінза</a></h3>
+            <p>Колір: Чорна оправа, сіра лінза<br>Розміри: Один розмір</p>
+            <span class="price">≈ 7 950 грн <span class="eur">≈ 159 €</span></span>
+            <p class="price-note">У США ≈ $175.</p>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Додатковий блок: одяг і аксесуари DEEP OPS (на них посилається фотожурнал) -->
+    <section class="block block-wide" id="apparel">
+      <h2>Одяг і аксесуари DEEP OPS</h2>
+      <p class="price-info">Ціни в євро перераховано за офіційним курсом НБУ на 17.11.2026: 1 € = 49,99 грн.</p>
+      <h3 class="cat-title" id="cat-field">Польовий одяг і аксесуари</h3>
+      <div class="cards">
+        <article class="card gear-card" id="p-tshirt-black">
+          <div class="card-media">
+            <img src="images/products/tshirt-black.jpg" alt="Футболка чорна" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/tshirt-black.html" class="card-link">Футболка чорна</a></h3>
+            <p>Колір: Чорний<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">690 грн <span class="eur">≈ 14 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-hoodie-print">
+          <div class="card-media">
+            <img src="images/products/hoodie-print.jpg" alt="Худі чорне з принтом" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорний, білий принт</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/hoodie-print.html" class="card-link">Худі чорне з принтом</a></h3>
+            <p>Колір: Чорний, білий принт<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">1 890 грн <span class="eur">≈ 38 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-jacket-field">
+          <div class="card-media">
+            <img src="images/products/jacket-field.jpg" alt="Польова куртка" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Світлий камуфляж</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/jacket-field.html" class="card-link">Польова куртка</a></h3>
+            <p>Колір: Світлий камуфляж<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">4 900 грн <span class="eur">≈ 98 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-pants-knee">
+          <div class="card-media">
+            <img src="images/products/pants-knee.jpg" alt="Польові штани з наколінниками" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Камуфляж</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/pants-knee.html" class="card-link">Польові штани з наколінниками</a></h3>
+            <p>Колір: Камуфляж<br>Розміри: 46–58<br>Бренд: DEEP OPS</p>
+            <span class="price">3 400 грн <span class="eur">≈ 68 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-pants-olive">
+          <div class="card-media">
+            <img src="images/products/pants-olive.jpg" alt="Польові штани" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Олива</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/pants-olive.html" class="card-link">Польові штани</a></h3>
+            <p>Колір: Олива<br>Розміри: 46–58<br>Бренд: DEEP OPS</p>
+            <span class="price">2 700 грн <span class="eur">≈ 54 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-boots">
+          <div class="card-media">
+            <img src="images/products/boots.jpg" alt="Високі черевики" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Коричневий</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/boots.html" class="card-link">Високі черевики</a></h3>
+            <p>Колір: Коричневий<br>Розміри: 39–46<br>Бренд: DEEP OPS</p>
+            <span class="price">4 600 грн <span class="eur">≈ 92 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-gloves">
+          <div class="card-media">
+            <img src="images/products/gloves.jpg" alt="Рукавички польові" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Коричневий</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/gloves.html" class="card-link">Рукавички польові</a></h3>
+            <p>Колір: Коричневий<br>Розміри: S–XL<br>Бренд: DEEP OPS</p>
+            <span class="price">890 грн <span class="eur">≈ 18 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-waist-bag">
+          <div class="card-media">
+            <img src="images/products/waist-bag.png" alt="Поясна сумка" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Олива</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/waist-bag.html" class="card-link">Поясна сумка</a></h3>
+            <p>Колір: Олива<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">1 150 грн <span class="eur">≈ 23 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-headlamp">
+          <div class="card-media">
+            <img src="images/products/headlamp.jpg" alt="Налобний ліхтар компактний" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/headlamp.html" class="card-link">Налобний ліхтар компактний</a></h3>
+            <p>Колір: Чорний<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">1 250 грн <span class="eur">≈ 25 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-backpack">
+          <div class="card-media">
+            <img src="images/products/backpack.jpg" alt="Компактний рюкзак 15 л" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Олива</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/backpack.html" class="card-link">Компактний рюкзак 15 л</a></h3>
+            <p>Колір: Олива<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">2 600 грн <span class="eur">≈ 52 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-organizer">
+          <div class="card-media">
+            <img src="images/products/organizer.jpg" alt="Органайзер для дрібниць" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Койот</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/organizer.html" class="card-link">Органайзер для дрібниць</a></h3>
+            <p>Колір: Койот<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">650 грн <span class="eur">≈ 13 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-tripod">
+          <div class="card-media">
+            <img src="images/products/tripod.jpg" alt="Штатив для оптики" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/tripod.html" class="card-link">Штатив для оптики</a></h3>
+            <p>Колір: Чорний<br>Розміри: До 160 см<br>Бренд: DEEP OPS</p>
+            <span class="price">3 900 грн <span class="eur">≈ 78 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-tripod-bag">
+          <div class="card-media">
+            <img src="images/products/tripod-bag.jpg" alt="Сумка для штатива" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Олива</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/tripod-bag.html" class="card-link">Сумка для штатива</a></h3>
+            <p>Колір: Олива<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">1 400 грн <span class="eur">≈ 28 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+      <h3 class="cat-title" id="cat-dive">Дайвінг</h3>
+      <div class="cards">
+        <article class="card gear-card" id="p-wetsuit">
+          <div class="card-media">
+            <img src="images/gear_wetsuit.svg" alt="Гідрокостюм 5 мм" width="400" height="300" loading="lazy">
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/wetsuit.html" class="card-link">Гідрокостюм 5 мм</a></h3>
+            <p>Колір: Чорний<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">9 800 грн <span class="eur">≈ 196 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-fins">
+          <div class="card-media">
+            <img src="images/products/fins.jpg" alt="Ласти довгі" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/fins.html" class="card-link">Ласти довгі</a></h3>
+            <p>Колір: Чорний<br>Розміри: 38–46<br>Бренд: DEEP OPS</p>
+            <span class="price">3 200 грн <span class="eur">≈ 64 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-hood">
+          <div class="card-media">
+            <img src="images/products/hood.jpg" alt="Неопреновий капюшон 5 мм" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/hood.html" class="card-link">Неопреновий капюшон 5 мм</a></h3>
+            <p>Колір: Чорний<br>Розміри: S–XL<br>Бренд: DEEP OPS</p>
+            <span class="price">1 350 грн <span class="eur">≈ 27 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-slate">
+          <div class="card-media">
+            <img src="images/products/slate.jpg" alt="Підводний планшет для записів" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Сірий</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/slate.html" class="card-link">Підводний планшет для записів</a></h3>
+            <p>Колір: Сірий<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">690 грн <span class="eur">≈ 14 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-mask">
+          <div class="card-media">
+            <img src="images/products/mask.jpg" alt="Маска малого об'єму" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/mask.html" class="card-link">Маска малого об'єму</a></h3>
+            <p>Колір: Чорний<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">2 100 грн <span class="eur">≈ 42 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-cam-box">
+          <div class="card-media">
+            <img src="images/products/cam-box.jpg" alt="Підводний бокс для екшн-камери" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Прозорий</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/cam-box.html" class="card-link">Підводний бокс для екшн-камери</a></h3>
+            <p>Колір: Прозорий<br>Розміри: Сумісність — у картці виробника камери<br>Бренд: DEEP OPS</p>
+            <span class="price">1 600 грн <span class="eur">≈ 32 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-cam-mount">
+          <div class="card-media">
+            <img src="images/gear_cam_mount.svg" alt="Кріплення камери на шолом" width="400" height="300" loading="lazy">
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/cam-mount.html" class="card-link">Кріплення камери на шолом</a></h3>
+            <p>Колір: Чорний<br>Розміри: Сумісність — у картці виробника камери<br>Бренд: DEEP OPS</p>
+            <span class="price">750 грн <span class="eur">≈ 15 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+      <h3 class="cat-title" id="cat-marine">Морська колекція</h3>
+      <div class="cards">
+        <article class="card gear-card" id="p-telnyk">
+          <div class="card-media">
+            <img src="images/products/telnyk.jpg" alt="Тільник-майка" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Синьо-білий</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/telnyk.html" class="card-link">Тільник-майка</a></h3>
+            <p>Колір: Синьо-білий<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">450 грн <span class="eur">≈ 9 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-beret">
+          <div class="card-media">
+            <img src="images/products/beret.jpg" alt="Берет" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Темно-синій</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/beret.html" class="card-link">Берет</a></h3>
+            <p>Колір: Темно-синій<br>Розміри: 54–60<br>Бренд: DEEP OPS</p>
+            <span class="price">690 грн <span class="eur">≈ 14 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-belt">
+          <div class="card-media">
+            <img src="images/gear_belt.svg" alt="Ремінь польовий" width="400" height="300" loading="lazy">
+            <span class="card-overlay">Чорний</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/belt.html" class="card-link">Ремінь польовий</a></h3>
+            <p>Колір: Чорний<br>Розміри: 90–130 см<br>Бренд: DEEP OPS</p>
+            <span class="price">890 грн <span class="eur">≈ 18 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-longsleeve">
+          <div class="card-media">
+            <img src="images/products/longsleeve.jpg" alt="Смугастий лонгслів" width="400" height="300" loading="lazy" class="fit-contain">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Синьо-білий</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/longsleeve.html" class="card-link">Смугастий лонгслів</a></h3>
+            <p>Колір: Синьо-білий<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">790 грн <span class="eur">≈ 16 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-tshirt-navy">
+          <div class="card-media">
+            <img src="images/gear_tshirt_navy.svg" alt="Футболка темно-синя" width="400" height="300" loading="lazy">
+            <span class="card-overlay">Темно-синій</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/tshirt-navy.html" class="card-link">Футболка темно-синя</a></h3>
+            <p>Колір: Темно-синій<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">690 грн <span class="eur">≈ 14 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-jacket-olive">
+          <div class="card-media">
+            <img src="images/products/jacket-olive.jpg" alt="Оливкова куртка" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Олива</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/jacket-olive.html" class="card-link">Оливкова куртка</a></h3>
+            <p>Колір: Олива<br>Розміри: S–XXL<br>Бренд: DEEP OPS</p>
+            <span class="price">4 200 грн <span class="eur">≈ 84 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+        <article class="card gear-card" id="p-goggles">
+          <div class="card-media">
+            <img src="images/products/goggles.jpg" alt="Захисні окуляри" width="400" height="300" loading="lazy" class="fit-contain on-white">
+            <span class="photo-cap">Фото схожої моделі</span>
+            <span class="card-overlay">Чорна оправа, димчасте скло</span>
+          </div>
+          <div class="card-body">
+            <h3><a href="product/goggles.html" class="card-link">Захисні окуляри</a></h3>
+            <p>Колір: Чорна оправа, димчасте скло<br>Розміри: Один розмір<br>Бренд: DEEP OPS</p>
+            <span class="price">1 450 грн <span class="eur">≈ 29 €</span></span>
+            <span class="more" aria-hidden="true">Детальніше →</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер: копірайт, соцмережі з bounce-анімацією, кнопка «нагору» -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; 2026 Мацько Богдан. DEEP OPS — навчальний проєкт на чистому HTML і CSS3.</p>
+        <p class="disclaimer">Магазин не пов'язаний з підрозділами, згаданими на сайті.</p>
+      </div>
+      <ul class="social">
+        <li><a href="mailto:shop@deep-ops.example.com" aria-label="E-mail"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18v12H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></li>
+        <li><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M21 3L3 11l7 3 3 7z M10 14l11-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="13.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 7l1.5-3h3L15 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back-to-top: плавний скрол через scroll-behavior: smooth -->
+  <a href="#top" class="to-top" aria-label="Повернутися нагору">&#8593;</a>
+
+</body>
+</html>
